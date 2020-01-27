@@ -1,0 +1,46 @@
+.frame {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gameBox {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 0.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #EEE;
+}
+
+.gameBox>.cell {
+    width: calc( 100% - 1px);
+    height: calc( 100% - 1px);
+    margin: 0.5px;
+    /* grid: 1; */
+    box-sizing: border-box;
+    border: 1px solid #000;
+    line-height: 390%;
+    /* font-size: large; */
+    background-color: #DDD;
+    transition: all 0.15s 0.05s;
+}
+
+.gameBox>.cell:hover {
+    background-color: #EEE;
+}
+
+.gameTip {
+    color: #C33;
+    font-weight: bold;
+}
+
+.gameLog {
+    color: #33C;
+}
